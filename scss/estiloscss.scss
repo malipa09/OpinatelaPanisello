@@ -1,0 +1,451 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerBody{
+    width: 100%;
+    height: 1550px;
+    display: grid;
+    grid-template-rows: 8% 90% 10%;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+
+    &__Header{
+        display: grid;
+        grid-template-columns: 10% 40% 50%;
+        grid-template-areas:
+                            "logo titulo nav";
+        position: sticky;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 5;
+        grid-area: header;
+        background-image: linear-gradient(to left, grey, white, white);              
+
+        .Logo{
+            text-align: left;
+            margin-left: 10%;
+            grid-area: logo;
+            margin-top: 3px;
+            min-width:80px;
+            max-width:100px
+        }
+
+        h1{
+            color: black;
+            font-size: 30px;
+            font-family: Shadows Into Light;
+            text-align: center;
+            padding-top: 20px;
+            grid-area: titulo;
+          }
+
+        .containerNav{
+            text-align: center;
+            grid-area: nav;    
+
+            &__navli{
+                display: inline-block;
+                font-size: 20px;
+                font-family: Shadows Into Light;
+                height: 20px;
+                text-align: center;
+                padding: 30px 5px 0px 5px;
+                transition: 500ms all;
+
+                &:hover{
+                    transform: translate(15px, 15px);
+                    font-size: 30px;
+                }
+            }
+
+            &__nava{
+                text-decoration-line: none;
+                color: black;
+            }
+        }
+
+    }
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    grid-area: main;
+    grid-template-rows: 20% 10% 70%;
+    grid-template-areas: "area1"
+                         "area2"
+                         "area3";
+ }
+
+.banner{
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    grid-area: area1;
+}
+
+h2{
+    background-color: grey;
+    color: black;
+    text-align: center;
+    font-family: Shadows Into Light;
+    font-size: 30px;
+    margin-top: 15px;
+    grid-area: area2;
+    animation-name: background1;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes background1{
+    0%{
+        background-color: white;
+    }
+
+    50%{
+        background-color: lightgrey;
+    }
+
+    100%{
+        background-color: grey;
+    }
+}
+
+.containerNovedades{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 80px; 
+    margin-top: 60px;
+    grid-area: area3;
+}
+
+.imgNovedades{
+    display: inline-block;
+}
+
+.containerCard{
+    margin: 10px;
+}
+
+#containerall{
+    top: 0;
+    background-color: white;
+    height: 100%;
+    margin-left: 5px;
+    padding-top: 5px;
+
+    .containerUno{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+      
+        &__Descripcion, &__Ficha{
+                color: black;
+                text-align: left;
+                font-family: roboto;
+                font-size: 15px;
+                border-radius: 4px;
+                border: groove;
+                width: 30%;
+                margin-left: 50px;
+                margin-bottom: 50px;
+        }  
+
+    }       
+
+    &__Opinion{
+        color: black;
+        font-family: roboto;
+        font-size: 15px;
+        border-radius: 4px;
+        border: groove;
+        margin-top: 50px;
+        margin-bottom: 10px; 
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+}
+
+
+
+.imgall{
+        width: 200px;
+    }
+
+#imgmusica{
+        height: 170px;
+    }
+
+
+
+.textall{
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h3, h4{
+ font-family: Shadows Into Light;
+ margin-top: 0px;
+ text-align: center;
+ margin-left: 10px;
+ font-weight: bold;
+ font-size: 30px; 
+}
+
+p{
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p1{
+    color: black;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+.novedades{
+    width: 25%;
+    height: 80%;
+    font-size: 60px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.textnovedades{
+    border-color: black;
+    border: outset;
+    font-size: 30%;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;   
+    background-color: #202020;  
+}
+
+.containerFooter{
+    width: 100%;
+    grid-area: footer;
+}
+
+.containerRed{
+    display: inline-block;
+}
+
+#imgRed{
+    width: 35px;
+    
+}
+
+.textFooter{
+    color: white;
+    flex-direction: row;
+    font-size: 15px;
+    border-style: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.containerAvatars{
+    width: 100%;
+}
+
+.avatars1{
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.avatars2{
+    flex-direction: row;
+    max-width: 600px;
+    margin: 20px;
+    border-color: black;
+    border-radius: 4px;
+    border: groove;
+    padding: 30px;
+}
+
+.imgAvatar{
+    width: 100px;
+    height: 100px;
+}
+
+.textavatar{
+    margin-left: 10px;
+}
+
+.containerForm{
+    width: 400px;
+    background-color: grey;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.texform{
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-right: 10px;
+    border: 2px solid #202020;
+    font-size: 18px;
+}
+
+.textlegend{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/*Dispositivos moviles*/
+@media only screen and (max-width: 800px){
+
+    .containerBody{
+        height: 2700px;
+        grid-template-rows: 5% 80% 10%;
+    
+        &__Header{
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: "logo titulo"
+                             "nav nav";  
+
+                &__navli:hover{
+                transform: translate(3px, 3px);
+                font-size: 20px;
+            }
+           
+        }
+    }
+
+    #containerall{
+            display: inline-block;
+    
+        .containerUno{
+            flex-direction: column;
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+    
+            &__Descripcion{
+                width: 90%;
+                margin-left: 5%;
+                margin-bottom: 5%;
+                margin-top: 10%;
+            }
+    
+            &__Ficha{
+                width: 90%;
+                margin-left: 5%;
+                margin-bottom: 0%;
+            }
+        }
+        
+    }
+
+    &__Opinion{
+        width: 90%;
+        margin-bottom: 2px; 
+        margin-right: 10%;
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+
+    .imgall{
+        width: 100%;
+    }       
+
+    #imgmusica{
+        height: 100%;
+        width: 100%;
+    }
+
+    
+    .containerAvatars{
+        margin-top: 5%;
+        width: 100%;
+    }
+
+        .avatars1{
+        flex-direction: column;
+        width: 90%;
+        margin: 0px 10px 0px 30px;
+
+    }
+}
+
+/*Dispositivos pequeños*/
+@media only screen and (max-width: 530px){
+
+    .containerNovedades{
+        display: inline-block;
+        padding-left: 75px;
+    }
+
+    .novedades{       
+        width: 90%;
+        height: 8%;
+        font-size: 50px;
+        margin-bottom: 60%;
+    }
+    
+    .imgNovedades{
+        width: 60%;
+        justify-content: center;
+        margin-left:20%
+    }
+
+    .avatars1{
+        margin: 0px 0px 0px 30px;
+     }
+
+     .avatars2{
+        flex-direction: column;
+        width: 90%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .containerForm{
+        width: 200px;
+    }
+
+    .texform{
+        font-size: 15px;
+    }
+
+    .textlegend{
+        font-size: 12px;
+    }
+
+}
