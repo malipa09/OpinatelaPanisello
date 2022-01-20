@@ -42,14 +42,17 @@
         display: inline-block;
         font-size: 20px;
         font-family: Shadows Into Light;
-        height: 20px;
+        height: 100px;
         text-align: center;
         padding: 30px 5px 0px 5px;
         transition: 500ms all; }
         .containerBody__Header .containerNav__navli:hover {
           transform: translate(15px, 15px);
           font-size: 30px; }
-      .containerBody__Header .containerNav__nava {
+      .containerBody__Header .containerNav__nava1 {
+        text-decoration-line: none;
+        color: black; }
+      .containerBody__Header .containerNav__nava2 {
         text-decoration-line: none;
         color: black; }
 
@@ -273,7 +276,7 @@ p1 {
       grid-template-areas: "logo titulo" "nav nav"; }
       .containerBody__Header__navli:hover {
         transform: translate(3px, 3px);
-        font-size: 20px; }
+        font-size: 150px; }
   #containerall {
     display: inline-block; }
     #containerall .containerUno {
@@ -313,19 +316,26 @@ p1 {
 @media only screen and (max-width: 530px) {
   .containerBody {
     height: 2700px;
-    grid-template-rows: 15% 80% 5%; }
+    grid-template-rows: 6% 80% 10%; }
     .containerBody__Header {
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 10% 80% 10%;
-      grid-template-areas: "logo logo" "titulo titulo" "nav nav"; }
-      .containerBody__Header .Logo {
-        text-align: center; }
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 25% 35% 40%;
+      grid-template-areas: "logo titulo" "logo nav" "logo nav"; }
       .containerBody__Header__navli:hover {
         transform: translate(3px, 3px);
-        font-size: 20px; }
+        font-size: 150px;
+        height: 20px; }
+  .containerNav__nava1 {
+    text-decoration-line: none;
+    color: black;
+    grid-area: nav; }
+  .containerNav__nava2 {
+    text-decoration-line: none;
+    color: black;
+    grid-area: nav; }
   .containerNovedades {
     display: inline-block;
-    padding-left: 75px; }
+    padding-left: 50px; }
   .novedades {
     width: 90%;
     height: 8%;
