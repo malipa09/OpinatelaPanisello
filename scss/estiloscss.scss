@@ -3,11 +3,7 @@
     padding:0;
 }
 
-div{
-    display: flex;
-    flex-direction: column;
-}
-
+/*Header*/
 .containerBody{
     width: 100%;
     height: 1550px;
@@ -76,6 +72,7 @@ div{
     }
 }
 
+/*cuerpo generico*/
 main{
     height: 100%;
     width: 100%;
@@ -121,6 +118,30 @@ h2{
     }
 }
 
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+h3, h4{
+    font-family: Shadows Into Light;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px; 
+   }
+   
+   p{
+       color: black;
+       text-align: center;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 15px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+   }
+
+/*Cuerpo Home*/
 .containerNovedades{
     flex-direction: row;
     flex-wrap: wrap;
@@ -139,6 +160,7 @@ h2{
     margin: 10px;
 }
 
+/*Paginas de opinones*/
 #containerall{
     top: 0;
     background-color: white;
@@ -179,8 +201,6 @@ h2{
     }
 }
 
-
-
 .imgall{
         width: 200px;
     }
@@ -197,31 +217,6 @@ h2{
     margin-left: 10px;
 }
 
-h3, h4{
- font-family: Shadows Into Light;
- margin-top: 0px;
- text-align: center;
- margin-left: 10px;
- font-weight: bold;
- font-size: 30px; 
-}
-
-p{
-    color: black;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-p1{
-    color: black;
-    text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-}
-
 .novedades{
     width: 25%;
     height: 80%;
@@ -236,6 +231,7 @@ p1{
     font-size: 30%;
 }
 
+/*Footer*/
 .footer{
     height: 100px;
     width: 100%;   
@@ -265,6 +261,7 @@ p1{
     margin-top: 40px;
 }
 
+/*quienes somos?*/
 .containerAvatars{
     width: 100%;
 }
@@ -295,6 +292,14 @@ p1{
     margin-left: 10px;
 }
 
+p1{
+    color: black;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+/*Formulario de contacto*/
 .containerForm{
     width: 400px;
     background-color: grey;
@@ -334,7 +339,7 @@ p1{
             grid-template-columns: 40% 60%;
             grid-template-rows: 50% 50%;
             grid-template-areas: "logo titulo"
-                             "nav nav";  
+                                 "nav nav";  
 
                 &__navli:hover{
                 transform: translate(3px, 3px);
@@ -402,6 +407,30 @@ p1{
 
 /*Dispositivos pequeños*/
 @media only screen and (max-width: 530px){
+
+    .containerBody{
+        height: 2700px;
+        grid-template-rows: 15% 80% 5%;
+    
+        &__Header{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-areas: "logo logo"
+                                 "titulo titulo"
+                                 "nav nav"; 
+
+            .Logo{
+               text-align: center;
+            }
+
+
+            &__navli:hover{
+                transform: translate(3px, 3px);
+                font-size: 20px;
+            }
+           
+        }
+    }
 
     .containerNovedades{
         display: inline-block;
