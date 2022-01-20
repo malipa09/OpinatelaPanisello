@@ -15,43 +15,43 @@
 
     &__Header{
         display: grid;
-        grid-template-columns: 10% 40% 50%;
+        grid-template-columns: 15% 30% 55%;
         grid-template-areas:
                             "logo titulo nav";
         position: sticky;
         top: 0;
-        background-color: white;
         width: 100%;
         z-index: 5;
         grid-area: header;
-        background-image: linear-gradient(to left, grey, white, white);              
+        background-image: linear-gradient(to left, #0F1011, #343B53, #6E8296);              
 
         .Logo{
             text-align: left;
             margin-left: 10%;
+            margin-bottom: 10px;
             grid-area: logo;
-            margin-top: 3px;
             min-width:80px;
-            max-width:100px
+            max-width:120px
         }
 
         h1{
-            color: black;
-            font-size: 30px;
-            font-family: Shadows Into Light;
+            color: #DAE2E7;
+            font-size: 28px;
+            font-family: Averia+Serif+Libre;
             text-align: center;
-            padding-top: 20px;
+            padding-top: 42px;
             grid-area: titulo;
           }
 
         .containerNav{
             text-align: center;
+            padding-top: 16px;
             grid-area: nav;    
 
             &__navli{
                 display: inline-block;
                 font-size: 20px;
-                font-family: Shadows Into Light;
+                font-family: Averia+Serif+Libre;
                 height: 100px;
                 text-align: center;
                 padding: 30px 5px 0px 5px;
@@ -65,12 +65,12 @@
 
             &__nava1{
                 text-decoration-line: none;
-                color: black;
+                color: #DAE2E7;
             }
 
             &__nava2{
                 text-decoration-line: none;
-                color: black;
+                color: #DAE2E7;
             }
         }
 
@@ -97,29 +97,29 @@ main{
 }
 
 h2{
-    background-color: grey;
-    color: black;
+    color: #DAE2E7;
     text-align: center;
-    font-family: Shadows Into Light;
+    font-family: Averi+Serif+Libre;
     font-size: 30px;
     margin-top: 15px;
     grid-area: area2;
     animation-name: background1;
     animation-duration: 5s;
     animation-iteration-count: 2;
+    background-color: #515977;
 }
 
 @keyframes background1{
     0%{
-        background-color: white;
+        background-color: #6E8296;
     }
 
     50%{
-        background-color: lightgrey;
+        background-color: #343B53;
     }
 
     100%{
-        background-color: grey;
+        background-color: #0F1011;
     }
 }
 
@@ -129,7 +129,7 @@ div{
 }
 
 h3, h4{
-    font-family: Shadows Into Light;
+    font-family: sans-serif;
     margin-top: 0px;
     text-align: center;
     margin-left: 10px;
@@ -139,8 +139,8 @@ h3, h4{
    
    p{
        color: black;
-       text-align: justify;
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       text-align: center;
+       font-family: sans-serif;
        font-size: 12px;
        margin-top: 10px;
        margin-bottom: 10px;
@@ -215,7 +215,6 @@ h3, h4{
     }
 
 
-
 .textall{
     text-align: left;
     margin-right: 10px;
@@ -254,8 +253,9 @@ h3, h4{
 
 #imgRed{
     width: 35px;
-    
+    margin-left: 5px;    
 }
+
 
 .textFooter{
     color: white;
@@ -264,6 +264,7 @@ h3, h4{
     border-style: none;
     justify-content: center;
     margin-top: 40px;
+    text-align: center;
 }
 
 /*quienes somos?*/
@@ -297,11 +298,11 @@ h3, h4{
     margin-left: 10px;
 }
 
-p1{
+.textbio{
     color: black;
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 /*Formulario de contacto*/
