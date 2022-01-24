@@ -191,7 +191,7 @@ h3, h4{
 
 /*Paginas de opinones*/
 #containerall{
-    top: 0;
+    margin-top: 0;
     background-color: white;
     height: 100%;
     padding-top: 5px;
@@ -255,7 +255,6 @@ h3, h4{
     font-family: sans-serif;
 }
 
-
 .novedades{
     width: 25%;
     height: 80%;
@@ -304,11 +303,13 @@ h3, h4{
 /*quienes somos?*/
 .containerAvatars{
     width: 100%;
+    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
+    margin-top: 0px;
+    padding-top: 0;
 }
 
 .avatars1{
     flex-direction: row;
-    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -316,8 +317,11 @@ h3, h4{
 .avatars2{
     flex-direction: row;
     max-width: 600px;
-    margin: 20px;
-    border-color: black;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-color: #DAE2E7;
     border-radius: 4px;
     border: groove;
     padding: 30px;
@@ -332,11 +336,19 @@ h3, h4{
     margin-left: 10px;
 }
 
+.tituloBio{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #DAE2E7;
+}
+
 .textbio{
-    color: black;
+    color: #DAE2E7;
     text-align: justify;
     font-family: sans-serif;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 /*Formulario de contacto*/
