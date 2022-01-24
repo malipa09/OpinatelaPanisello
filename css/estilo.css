@@ -84,11 +84,11 @@ main {
 
 @keyframes background1 {
   0% {
-    background-color: #05A6AE; }
+    background-color: #DAE2E7; }
   50% {
-    background-color: #046B74; }
+    background-color: #05A6AE; }
   100% {
-    background-color: #051C24; } }
+    background-color: #046B74; } }
 
 div {
   display: flex;
