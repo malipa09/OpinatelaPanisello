@@ -23,7 +23,7 @@
         width: 100%;
         z-index: 5;
         grid-area: header;
-        background-image: linear-gradient(to left, #0F1011, #343B53, #6E8296);              
+        background-image: linear-gradient(to left, #051C24, #046b74, #05A6AE);              
 
         .Logo{
             text-align: left;
@@ -105,20 +105,20 @@ main{
     animation-name: background1;
     animation-duration: 5s;
     animation-iteration-count: 2;
-    background-color: #515977;
+    background-color: #BC6F69;
 }
 
 @keyframes background1{
     0%{
-        background-color: #6E8296;
+        background-color: #05A6AE;
     }
 
     50%{
-        background-color: #343B53;
+        background-color: #046B74;
     }
 
     100%{
-        background-color: #0F1011;
+        background-color: #051C24;
     }
 }
 
@@ -143,9 +143,9 @@ h3, h4{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 80%;
+    height: 100%;
     grid-area: area3;
-    background-image: linear-gradient(to left, #0F1011, #343B53, #6E8296); 
+    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
 }
 
 .card-text{
@@ -170,9 +170,9 @@ h3, h4{
 #containerall{
     top: 0;
     background-color: white;
-    height: 80%;
+    height: 100%;
     padding-top: 5px;
-    background-image: linear-gradient(to left, #0F1011, #343B53, #6E8296); 
+    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
 
 
     .containerUno{
@@ -225,8 +225,8 @@ h3, h4{
 
 .textOpinion{
     text-align: left;
-    margin-right: 110px;
-    margin-left: 110px;
+    margin-right: 10%;
+    margin-left: 10%;
     color: #DAE2E7;
     text-align: justify;
     font-family: sans-serif;
@@ -249,7 +249,7 @@ h3, h4{
 
 /*Footer*/
 .footer{
-    height: 80px;
+    height: 70px;
     width: 100%;   
     background-color: #202020;  
 }
@@ -267,7 +267,6 @@ h3, h4{
     width: 35px;
     margin-left: 5px;    
 }
-
 
 .textFooter{
     color: white;
