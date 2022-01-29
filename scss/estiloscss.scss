@@ -7,7 +7,7 @@
     width: 100%;
     height: 1550px;
     display: grid;
-    grid-template-rows: 8% 90% 10%;
+    grid-template-rows: 8% 85% 5%;
     grid-template-areas: "header"
                          "main"
                          "footer";
@@ -271,9 +271,13 @@ h3, h4{
 
 /*Footer*/
 .footer{
-    height: 70px;
+    height: 50px;
     width: 100%;   
     background-color: #202020;  
+}
+
+.containerCardFooter{
+    padding-top: 5px;
 }
 
 .containerFooter{
@@ -291,14 +295,10 @@ h3, h4{
 }
 
 .textFooter{
-    color: white;
-    flex-direction: row;
-    font-size: 15px;
-    border-style: none;
-    justify-content: center;
-    margin-top: 40px;
     text-align: center;
+ 
 }
+   
 
 /*quienes somos?*/
 .containerAvatars{
