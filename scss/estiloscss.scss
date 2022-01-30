@@ -34,7 +34,7 @@
             max-width:120px
         }
 
-        h1{
+        .animate__animated{
             color: #DAE2E7;
             font-size: 28px;
             font-family: Averia+Serif+Libre;
@@ -46,7 +46,7 @@
         .containerNav{
             text-align: center;
             padding-top: 16px;
-            grid-area: nav;    
+            grid-area: nav;
 
             &__navli{
                 display: inline-block;
@@ -228,6 +228,16 @@ h3, h4{
     }
 }
 
+li:hover .submenu{
+    display: block;
+}
+
+.containerMenu1{
+    margin-top: 30px;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
 .imgall{
         width: 200px;
     }
@@ -278,6 +288,7 @@ h3, h4{
 
 .containerCardFooter{
     padding-top: 5px;
+    background-color: #DAE2E7;
 }
 
 .containerFooter{
@@ -389,18 +400,22 @@ h3, h4{
 
     .containerBody{
         height: 2700px;
-        grid-template-rows: 5% 80% 10%;
-    
+        grid-template-rows: 7% 88% 5%;
+            
         &__Header{
             grid-template-columns: 40% 60%;
             grid-template-rows: 50% 50%;
             grid-template-areas: "logo titulo"
                                  "nav nav";  
 
+                .containerNav{
+                padding-top: 0px;
+                }  
+
                 &__navli:hover{
-                transform: translate(3px, 3px);
-                font-size: 150px;
-            }
+                transform: none;
+                }
+
            
         }
     }
@@ -449,7 +464,7 @@ h3, h4{
 
     
     .containerAvatars{
-        margin-top: 5%;
+        margin-top: 0;
         width: 100%;
     }
 
@@ -466,38 +481,30 @@ h3, h4{
 
     .containerBody{
         height: 2700px;
-        grid-template-rows: 6% 80% 10%;
+        grid-template-rows: 7% 90% 3%;
     
-        &__Header{
-            grid-template-columns: 30% 70%;
-            grid-template-rows: 25% 35% 40%;
-            grid-template-areas: "logo titulo"
-                                 "logo nav"
-                                 "logo nav";  
-
-                &__navli:hover{
-                transform: translate(3px, 3px);
-                font-size: 150px;
-                height: 20px;
-                }           
-        }
+                .containerNav{
+                padding-top: 8px;
+                }         
     }
 
+    
     .containerNav__nava1{
         text-decoration-line: none;
         color: black;
-        grid-area: nav;
+        font-size: 15px;
     }
 
     .containerNav__nava2{
         text-decoration-line: none;
         color: black;
-        grid-area: nav;
+        font-size: 15px;
     }
 
     .containerNovedades{
         display: inline-block;
         padding-left: 50px;
+        height: 118%;
     }
 
     .novedades{       
@@ -511,6 +518,14 @@ h3, h4{
         width: 60%;
         justify-content: center;
         margin-left:20%
+    }
+
+    #containerall{
+        height: 118%;
+    }
+
+    .containerAvatars{
+        height: 118%;
     }
 
     .avatars1{
@@ -530,6 +545,10 @@ h3, h4{
 
     .containerForm{
         width: 200px;
+    }
+
+    .containerForm1{
+        height: 118%;
     }
 
     .texform{
