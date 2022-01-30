@@ -234,11 +234,14 @@ h3, h4 {
   margin-left: 5px; }
 
 .textFooter {
-  text-align: center; }
+  text-align: center;
+  font-family: sans-serif;
+  color: #051C24; }
 
 /*quienes somos?*/
 .containerAvatars {
   width: 100%;
+  height: 105%;
   background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE);
   margin-top: 0px;
   padding-top: 0; }
@@ -246,7 +249,8 @@ h3, h4 {
 .avatars1 {
   flex-direction: row;
   margin-left: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  padding-top: 70px; }
 
 .avatars2 {
   flex-direction: row;
