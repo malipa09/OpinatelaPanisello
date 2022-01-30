@@ -5,15 +5,15 @@
 
 .containerBody {
   width: 100%;
-  height: 1550px;
+  height: 1920px;
   display: grid;
-  grid-template-rows: 8% 85% 5%;
+  grid-template-rows: 8% 85% 7%;
   grid-template-areas: "header" "main" "footer";
   /*Header*/ }
   .containerBody__Header {
     display: grid;
-    grid-template-columns: 15% 30% 55%;
-    grid-template-areas: "logo titulo nav";
+    grid-template-columns: 15% 30% 27% 27%;
+    grid-template-areas: "logo titulo nav1 nav2";
     position: sticky;
     top: 0;
     width: 100%;
@@ -35,15 +35,26 @@
       padding-top: 42px;
       grid-area: titulo; }
     .containerBody__Header .containerNav {
+      display: flex;
       text-align: center;
       padding-top: 16px;
-      grid-area: nav; }
+      padding-left: 20%;
+      width: 185%; }
+      .containerBody__Header .containerNav .containerNavUno {
+        display: flex;
+        flex-direction: row;
+        grid-area: nav1;
+        padding: 0%; }
+      .containerBody__Header .containerNav .containerNavDos {
+        display: flex;
+        flex-direction: row;
+        grid-area: nav2;
+        padding: 0%; }
       .containerBody__Header .containerNav__navli {
         display: inline-block;
         font-size: 20px;
         font-family: AveriaSerifLibre;
         height: 100px;
-        text-align: center;
         padding: 30px 5px 0px 5px;
         transition: 500ms all; }
         .containerBody__Header .containerNav__navli:hover {
@@ -51,10 +62,12 @@
           font-size: 30px; }
       .containerBody__Header .containerNav__nava1 {
         text-decoration-line: none;
-        color: #DAE2E7; }
+        color: #DAE2E7;
+        text-align: right; }
       .containerBody__Header .containerNav__nava2 {
         text-decoration-line: none;
-        color: #DAE2E7; }
+        color: #DAE2E7;
+        text-align: left; }
 
 /*cuerpo generico*/
 main {
@@ -153,7 +166,7 @@ h3, h4 {
 #containerall {
   margin-top: 0;
   background-color: white;
-  height: 100%;
+  height: 1550px;
   padding-top: 5px;
   background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); }
   #containerall .containerUno {
@@ -250,7 +263,7 @@ li:hover .submenu {
 /*quienes somos?*/
 .containerAvatars {
   width: 100%;
-  height: 105%;
+  height: 155 0px;
   background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE);
   margin-top: 0px;
   padding-top: 0; }
@@ -296,7 +309,7 @@ li:hover .submenu {
 /*Formulario de contacto*/
 .containerForm1 {
   margin-top: 0;
-  height: 100%;
+  height: 1550px;
   padding-top: 5px;
   background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); }
 
@@ -319,20 +332,35 @@ li:hover .submenu {
   font-size: 18px; }
 
 /*Dispositivos moviles*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 999px) {
   .containerBody {
-    height: 2700px;
+    height: 3000px;
     grid-template-rows: 7% 88% 5%; }
     .containerBody__Header {
-      grid-template-columns: 40% 60%;
+      grid-template-columns: 50% 50%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "logo titulo" "nav nav"; }
+      grid-template-areas: "logo titulo" "nav1 nav2"; }
+      .containerBody__Header .animate__animated {
+        font-size: 25px;
+        text-align: left; }
       .containerBody__Header .containerNav {
-        padding-top: 0px; }
+        padding-top: 0px;
+        text-align: center; }
       .containerBody__Header__navli:hover {
         transform: none; }
+      .containerBody__Header .containerNavUno {
+        height: 50px;
+        width: 200%;
+        grid-area: nav1;
+        justify-content: right; }
+      .containerBody__Header .containerNavDos {
+        height: 50px;
+        width: 200%;
+        grid-area: nav2;
+        padding-left: 0%; }
   #containerall {
-    display: inline-block; }
+    display: inline-block;
+    height: 2500px; }
     #containerall .containerUno {
       flex-direction: column;
       width: 90%;
@@ -367,20 +395,45 @@ li:hover .submenu {
     margin: 0px 10px 0px 30px; } }
 
 /*Dispositivos pequeños*/
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 690px) {
   .containerBody {
-    height: 2700px;
-    grid-template-rows: 7% 90% 3%; }
-    .containerBody .containerNav {
-      padding-top: 8px; }
+    height: 2990px;
+    grid-template-rows: 10% 87% 3%; }
+    .containerBody__Header {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 33% 33% 33%;
+      grid-template-areas: "logo titulo" "nav1 nav1" "nav2 nav2"; }
+      .containerBody__Header .animate__animated {
+        font-size: 20px; }
+      .containerBody__Header .containerNav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 45%; }
+        .containerBody__Header .containerNav__navli {
+          padding: 45px 0px 0px 30px; }
+          .containerBody__Header .containerNav__navli:hover {
+            transform: none;
+            height: 25px; }
+      .containerBody__Header .containerNavUno {
+        height: 50px;
+        width: 200%;
+        grid-area: nav1;
+        justify-content: center; }
+      .containerBody__Header .containerNavDos {
+        height: 50px;
+        width: 200%;
+        grid-area: nav2;
+        justify-content: center; }
   .containerNav__nava1 {
     text-decoration-line: none;
     color: black;
-    font-size: 15px; }
+    font-size: 17px; }
   .containerNav__nava2 {
     text-decoration-line: none;
     color: black;
-    font-size: 15px; }
+    font-size: 17px; }
   .containerNovedades {
     display: inline-block;
     padding-left: 50px;
