@@ -166,7 +166,7 @@ h3, h4 {
 #containerall {
   margin-top: 0;
   background-color: white;
-  height: 1550px;
+  height: 1520px;
   padding-top: 5px;
   background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); }
   #containerall .containerUno {
@@ -192,13 +192,8 @@ h3, h4 {
     margin-right: 100px;
     margin-left: 100px; }
 
-li:hover .submenu {
-  display: block; }
-
-.containerMenu1 {
-  margin-top: 30px;
-  margin-right: 120px;
-  margin-left: 120px; }
+.submenu {
+  background-color: #DAE2E7; }
 
 .imgall {
   width: 200px; }
@@ -392,7 +387,7 @@ li:hover .submenu {
   .avatars1 {
     flex-direction: column;
     width: 90%;
-    margin: 0px 10px 0px 30px; } }
+    margin: 0px 10px 0px 70px; } }
 
 /*Dispositivos pequeños*/
 @media only screen and (max-width: 690px) {
@@ -452,7 +447,7 @@ li:hover .submenu {
   .containerAvatars {
     height: 118%; }
   .avatars1 {
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 25px;
     padding-top: 0%; }
   .avatars2 {
     flex-direction: column;

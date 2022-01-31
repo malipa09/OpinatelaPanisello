@@ -207,10 +207,11 @@ h3, h4{
 }
 
 /*Paginas de opinones*/
+
 #containerall{
     margin-top: 0;
     background-color: white;
-    height: 1550px;
+    height: 1520px;
     padding-top: 5px;
     background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
 
@@ -245,14 +246,8 @@ h3, h4{
     }
 }
 
-li:hover .submenu{
-    display: block;
-}
-
-.containerMenu1{
-    margin-top: 30px;
-    margin-right: 120px;
-    margin-left: 120px;
+.submenu{
+    background-color: #DAE2E7;
 }
 
 .imgall{
@@ -507,7 +502,7 @@ li:hover .submenu{
         .avatars1{
         flex-direction: column;
         width: 90%;
-        margin: 0px 10px 0px 30px;
+        margin: 0px 10px 0px 70px;
 
     }
 }
@@ -605,7 +600,7 @@ li:hover .submenu{
     }
 
     .avatars1{
-        margin: 0px 0px 0px 30px;
+        margin: 0px 0px 0px 25px;
         padding-top: 0%;
      }
 
