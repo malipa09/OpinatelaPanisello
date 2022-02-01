@@ -3,6 +3,27 @@
     padding:0;
 }
 
+@mixin colorLigth() {
+    color: #DAE2E7;
+}
+
+@mixin colorMedium() {
+    color: #046b74;
+    
+}
+
+@mixin colorDark() {
+    color: #051C24;
+}
+
+@mixin backgroundLigth() {
+    background-color: #DAE2E7;
+}
+
+@mixin fondoGradient() {
+    background-image: linear-gradient(to left, #051C24, #046b74, #05A6AE); 
+}
+
 .containerBody{
     width: 100%;
     height: 1920px;
@@ -23,7 +44,7 @@
         width: 100%;
         z-index: 5;
         grid-area: header;
-        background-image: linear-gradient(to left, #051C24, #046b74, #05A6AE);              
+        @include fondoGradient();            
 
         .Logo{
             text-align: left;
@@ -35,7 +56,7 @@
         }
 
         .animate__animated{
-            color: #DAE2E7;
+            @include colorLigth();
             font-size: 28px;
             font-family: Averia+Serif+Libre;
             text-align: center;
@@ -58,10 +79,8 @@
             }
 
             .containerNavDos{
-                display: flex;
-                flex-direction: row;
+                @extend .containerNavUno;
                 grid-area: nav2;
-                padding: 0%;
             }
 
             &__navli{
@@ -80,14 +99,12 @@
 
             &__nava1{
                 text-decoration-line: none;
-                color: #DAE2E7;
+                @include colorLigth();
                 text-align: right;
             }
 
             &__nava2{
-                text-decoration-line: none;
-                color: #DAE2E7;
-                text-align: left;
+                @extend .containerNav__nava1;
             }
         }
 
@@ -114,7 +131,7 @@ main{
 }
 
 .tituloDos{
-    color: #051C24;
+    @include colorDark();
     text-align: center;
     font-family: Averi+Serif+Libre;
     grid-area: area2;
@@ -122,12 +139,12 @@ main{
     animation-name: background1;
     animation-duration: 5s;
     animation-iteration-count: 2;
-    background-color: #DAE2E7;
+    @include backgroundLigth();
 }
 
 @keyframes background1{
     0%{
-        background-color: #DAE2E7;
+        @include backgroundLigth();
     }
 
     50%{
@@ -151,7 +168,7 @@ h3, h4{
     margin-left: 2px;
     font-weight: bold;
     font-size: 30px; 
-    color: #DAE2E7;
+    @include colorLigth;
    }
    
 /*Cuerpo Home*/
@@ -162,16 +179,16 @@ h3, h4{
     width: 100%;
     height: 100%;
     grid-area: area3;
-    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
+    @include fondoGradient(); 
 }
 
 .cardNovedades{
-    background-color: #DAE2E7;
+    @include backgroundLigth();
     border-radius: 6px;
 }
 
 .card-text{
-    color: #051C24;
+    @include colorDark();
     text-align: center;
     font-family: sans-serif;
     font-size: 12px;
@@ -201,7 +218,7 @@ h3, h4{
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     border-radius: 0.25rem;
-    color: #DAE2E7;
+    @include colorLigth;
     background-color: #046B74;
     border-color: #046B74;
 }
@@ -211,9 +228,9 @@ h3, h4{
 #containerall{
     margin-top: 0;
     background-color: white;
-    height: 1520px;
+    height: 1470px;
     padding-top: 5px;
-    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
+    @include fondoGradient(); 
 
 
     .containerUno{
@@ -247,7 +264,7 @@ h3, h4{
 }
 
 .submenu{
-    background-color: #DAE2E7;
+    @include backgroundLigth();
 }
 
 .imgall{
@@ -263,18 +280,13 @@ h3, h4{
     text-align: left;
     margin-right: 10px;
     margin-left: 10px;
-    color: #DAE2E7;
+    @include colorLigth();
     text-align: justify;
     font-family: sans-serif;
 }
 
 .textOpinion{
-    text-align: left;
-    margin-right: 10%;
-    margin-left: 10%;
-    color: #DAE2E7;
-    text-align: justify;
-    font-family: sans-serif;
+    @extend .textall;
 }
 
 .novedades{
@@ -300,7 +312,7 @@ h3, h4{
 
 .containerCardFooter{
     padding-top: 5px;
-    background-color: #DAE2E7;
+    @include backgroundLigth();
 }
 
 .containerFooter{
@@ -320,15 +332,15 @@ h3, h4{
 .textFooter{
     text-align: center; 
     font-family: sans-serif;
-    color: #051C24;
+    @include colorDark();
 }
    
 
 /*quienes somos?*/
 .containerAvatars{
     width: 100%;
-    height: 1550px;
-    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
+    height: 1490px;
+    @include fondoGradient();  
     margin-top: 0px;
     padding-top: 0;
 }
@@ -367,11 +379,11 @@ h3, h4{
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
-    color: #DAE2E7;
+    @include colorLigth();
 }
 
 .textbio{
-    color: #DAE2E7;
+    @include colorLigth();
     text-align: justify;
     font-family: sans-serif;
     font-size: 12px;
@@ -381,9 +393,9 @@ h3, h4{
 
 .containerForm1{
     margin-top: 0;
-    height: 1550px;
+    height: 1490px;
     padding-top: 5px;
-    background-image: linear-gradient(to left, #051C24, #046B74, #05A6AE); 
+    @include fondoGradient(); 
 }
 
 .containerForm2{
@@ -523,6 +535,7 @@ h3, h4{
                                  
             .animate__animated{
                 font-size: 20px;
+                justify-content: left;
             }                
                 
             .containerNav{
@@ -562,13 +575,13 @@ h3, h4{
     
     .containerNav__nava1{
         text-decoration-line: none;
-        color: black;
+        @include colorLigth;
         font-size: 17px;
     }
 
     .containerNav__nava2{
         text-decoration-line: none;
-        color: black;
+        @include colorLigth;
         font-size: 17px;
     }
 
@@ -610,15 +623,15 @@ h3, h4{
         margin-top: 90px;
         margin-bottom: 0px;
         padding: 5px;
-        background-color: #DAE2E7;
+        @include backgroundLigth;
     }
 
     .tituloBio{
-        color: #051C24;
+        @include colorDark;
     }
 
     .textbio{
-        color: #051C24;
+        @include colorDark;
     }
 
 
